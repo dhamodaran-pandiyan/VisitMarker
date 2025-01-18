@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Last Visit Info",
+    "version": "1.0",
+    "description": "Show last visit information for domains on Google search results.",
+    "permissions": ["history", "scripting"],
+    "host_permissions": ["https://*.google.com/*"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://*.google.com/search*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
