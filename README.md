@@ -46,8 +46,10 @@ VisitMarker/
 
 ---
 ### Screenshot
+#### Before visting a page: 
 ![Before Visit](before.png)
 
+#### After visting a page: 
 ![After Visit](after.png)
 ---
 
