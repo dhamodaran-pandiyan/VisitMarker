@@ -1,12 +1,12 @@
 // Extract the domain from a URL
-function extractDomain(url) {
-    try {
-      const urlObj = new URL(url);
-      return urlObj.hostname;
-    } catch (e) {
-      return null;
-    }
-  }
+// function extractDomain(url) {
+//     try {
+//       const urlObj = new URL(url);
+//       return urlObj.hostname;
+//     } catch (e) {
+//       return null;
+//     }
+//   }
   
   // Format timestamp to a readable string
   function formatTimestamp(timestamp) {
@@ -25,7 +25,8 @@ function extractDomain(url) {
       // Avoid processing the same link multiple times
       if (link.dataset.lastVisitProcessed === "true") return;
   
-      const domain = extractDomain(link.href);
+      // const domain = extractDomain(link.href);
+      const domain = link.href;
       if (domain) {
         chrome.runtime.sendMessage({ action: "getLastVisit", domain }, (response) => {
           const lastVisitTime = response?.lastVisit;

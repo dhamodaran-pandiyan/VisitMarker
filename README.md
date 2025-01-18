@@ -1,7 +1,7 @@
 
-# Last Visit Info for Google Search Results
+# VisitMarker for Google Search Results
 
-**Last Visit Info** is a Chrome extension that enhances your Google search experience by displaying the last time you visited a domain directly on the search results page. This lightweight extension uses your browser's history to provide quick and useful insights, helping you navigate more efficiently.
+**VisitMarker** is a Chrome extension that enhances your Google search experience by displaying the last time you visited a domain directly on the search results page. This lightweight extension uses your browser's history to provide quick and useful insights, helping you navigate more efficiently.
 
 ---
 
@@ -36,7 +36,7 @@
 ## File Structure
 
 ```
-last-visit-info-extension/
+VisitMarker/
 │
 ├── manifest.json   # Chrome extension configuration
 ├── background.js   # Handles browser history requests
@@ -44,6 +44,11 @@ last-visit-info-extension/
 └── README.md       # Project documentation
 ```
 
+---
+### Screenshot
+![Before Visit](before.png)
+
+![After Visit](after.png)
 ---
 
 ## Permissions
@@ -61,11 +66,8 @@ The extension requires the following permissions:
 1. Make changes to the files as needed.
 2. Reload the extension in Chrome:
    - Open `chrome://extensions/`.
-   - Click the refresh icon next to the "Last Visit Info" extension.
+   - Click the refresh icon next to the "VisitMarker" extension.
 3. Test your changes on a Google search results page.
-
-### Debugging
-Use `console.log` statements within `content.js` or `background.js` to debug issues. You can view logs in the **DevTools Console** (`Ctrl+Shift+I`).
 
 ---
 
@@ -103,14 +105,8 @@ Feel free to use, modify, and distribute this extension as per the terms of the 
 
 ## Feedback and Support
 
-If you encounter any issues or have feature requests, feel free to open an issue on the [GitHub repository](https://github.com/your-repo-url).
+If you encounter any issues or have feature requests, feel free to open an issue on the [GitHub repository](https://github.com/dhamodaran-pandiyan/VisitMarker).
 
 ---
 
-### Screenshot
-
-![Screenshot of Last Visit Info in action](screenshot.png)
-
----
-
-Thank you for using **Last Visit Info**! 🚀
+Thank you for using **VisitMarker**! 🚀
