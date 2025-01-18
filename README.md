@@ -55,7 +55,9 @@ VisitMarker/
 ├── manifest.json   # Chrome extension configuration
 ├── background.js   # Handles browser history requests
 ├── content.js      # Injected script to modify Google search results
-└── README.md       # Project documentation
+├── before.png      # Screenshot of google results page before visit
+├── after.png       # Screenshot of google results page after visit
+└── README.md       # Project readme
 ```
 
 
