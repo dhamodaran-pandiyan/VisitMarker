@@ -1,5 +1,41 @@
-.last-visit-info {
-    font-style: italic;
-    color: gray;
-  }
-  
+/* Style for the last visited button */
+.last-visited-button {
+  background-color: white;
+  color: darkgray; /* Dark gray text */
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  font-size: 12px;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 20px;  /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+  font-family: Arial, sans-serif;
+  margin-left: 15px;  /* Space between result and button */
+  margin-top: 0px;    /* Keep the button at the same level as the link */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);  /* Light shadow */
+  position: relative;
+}
+
+/* Hover effect to show the precise time */
+.last-visited-button:hover {
+  background-color: #f1f1f1;
+  transform: scale(1.05);  /* Slightly enlarge the button on hover */
+  color: #333;  /* Darker text color on hover */
+}
+
+/* Tooltip effect on hover (precise time) */
+.last-visited-button:hover::after {
+  content: attr(title); /* Show full timestamp on hover */
+  position: absolute;
+  background-color: #fff;
+  padding: 5px;
+  border: 1px solid #ccc;
+  font-size: 10px;
+  color: black;
+  margin-top: 20px;
+  border-radius: 5px;
+  z-index: 10;
+  white-space: nowrap;
+  transition: opacity 0.3s ease;
+}
