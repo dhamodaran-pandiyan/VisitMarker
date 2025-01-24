@@ -3,7 +3,7 @@
     "name": "VisitMarker",
     "version": "0.1",
     "description": "This Chrome extension adds a 'Last visited' date next to Google search results, sourced from your browser history.",
-    "permissions": ["history", "scripting"],
+    "permissions": ["history"],
     "host_permissions": ["https://*.google.com/*"],
     "background": {
       "service_worker": "background.js"

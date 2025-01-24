@@ -23,7 +23,6 @@ This extension only uses your local browser history to display "last visited" in
 The extension requires the following permissions:
 
 - **`history`**: To fetch your browsing history and retrieve the last visit timestamps.
-- **`scripting`**: To append last visited details on the Google search results page.
 - **Host permission** for `https://*.google.com/*`: Ensures the extension works ONLY on Google search pages.
 
 
