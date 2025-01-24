@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "VisitMarker",
     "version": "0.1",
-    "description": "Show last visit information for domains on Google search results.",
+    "description": "This Chrome extension adds a 'Last visited' date next to Google search results, sourced from your browser history.",
     "permissions": ["history", "scripting"],
     "host_permissions": ["https://*.google.com/*"],
     "background": {
